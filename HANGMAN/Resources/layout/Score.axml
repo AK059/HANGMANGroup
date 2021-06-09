@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/LLMain"
+    android:weightSum="10"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="3"
+        android:id="@+id/LL1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10">
+        <TextView
+            android:text="Player Score : "
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTextResult"
+            android:layout_weight="3"
+            android:textColor="@android:color/background_dark" />
+        <TextView
+            android:text="DUM"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvResult"
+            android:layout_weight="1"
+            android:textColor="@android:color/background_dark" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivResult"
+            android:layout_weight="6"
+            android:scaleType="fitXY"
+            android:background="@drawable/hangman12" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/LL2"
+        android:layout_weight="3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10">
+        <TextView
+            android:text="The Correct Word Is :"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:id="@+id/tvTextCorrectWord"
+            android:textColor="@android:color/background_dark"
+            android:gravity="center" />
+        <TextView
+            android:text="CORRECT WORD"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:id="@+id/tvCorrectWord"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:background="#ff69bbb5" />
+        <TextView
+            android:text="Enter player name:"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:id="@+id/tvEnterNameTxt"
+            android:textColor="@android:color/background_dark"
+            android:gravity="center" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:id="@+id/tvPName"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:background="#ffce998f"
+            android:maxLength="15" />
+        <TextView
+            android:text="SUBMIT"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:id="@+id/tvSubmit"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:background="#ff69bbb5"
+            android:gravity="center" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/LL3"
+        android:layout_weight="3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10">
+        <TextView
+            android:text="Back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvMenu"
+            android:layout_weight="5"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:background="#ffce998f"
+            android:layout_gravity="center"
+            android:gravity="center" />
+        <TextView
+            android:text="Try AGAIN"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvPlayAgain"
+            android:layout_weight="5"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:background="#ffce998f"
+            android:layout_gravity="center"
+            android:gravity="center" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/LL4"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+        <TextView
+            android:text="by: ic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvPatentS"
+            android:textSize="5dp"
+            android:textStyle="italic"
+            android:gravity="bottom"
+            android:textColor="@android:color/background_light"
+            android:layout_weight="1" />
+    </LinearLayout>
+</LinearLayout>

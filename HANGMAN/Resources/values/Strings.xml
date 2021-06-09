@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="ApplicationName">HANGMAN</string>
+  <string name="longtxt">
+   Hi,
+    This is a hangman game developed for my assignment
+  </string>
+</resources>

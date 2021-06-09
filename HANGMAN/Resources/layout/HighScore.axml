@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:weightSum="10">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="2">
+        <TextView
+            android:text="PLAYER"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtvwPlayer"
+            android:textColor="@android:color/background_dark"
+            android:gravity="left"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:includeFontPadding="true"
+            android:textStyle="normal|bold" />
+        <TextView
+            android:text="SCORE"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtvwScore"
+            android:textColor="@android:color/background_dark"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:weightSum="10">
+        <ListView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/lvHScore"
+            android:layout_weight="8.75" />
+        <TextView
+            android:text="Back"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/tvHSMenu"
+            android:textColor="#fff"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:background="#ff69bbb5"
+            android:layout_weight="1" />
+        <TextView
+            android:text="by: ic"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/tvPatentHS"
+            android:textSize="5dp"
+            android:textStyle="italic"
+            android:gravity="bottom"
+            android:textColor="@android:color/background_dark"
+            android:layout_weight="0.25" />
+    </LinearLayout>
+</LinearLayout>
